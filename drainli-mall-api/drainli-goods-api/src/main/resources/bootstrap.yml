@@ -1,0 +1,15 @@
+#server:
+#  port: 8081
+#spring:
+#  application:
+#    name: GOODS-API
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 192.168.43.78:8848
+#        file-extension: yml
+#      discovery:
+#        server-addr: 192.168.43.78:8848
+#logging:
+#  pattern:
+#    console: "%msg%n"

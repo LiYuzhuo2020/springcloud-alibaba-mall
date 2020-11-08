@@ -1,0 +1,32 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: MALL-GOODS-SERVICE
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.43.78:3306/cloud_mall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    #url: jdbc:mysql://192.168.3.148:3306/cloud_mall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 192.168.43.78:8848
+        enable-remote-sync-config: true
+        prefix: mybatisplus
+      discovery:
+        register-enabled: true
+        server-addr: 192.168.43.78:8848
+      server-addr: 192.168.43.78:8848
+#mybatis-plus:
+#  mapper-locations: mapper/*.xml
+#  type-aliases-package: com.api.entity
+#  configuration:
+#    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  pattern:
+    console: "%msg%n" # 日志的格式
