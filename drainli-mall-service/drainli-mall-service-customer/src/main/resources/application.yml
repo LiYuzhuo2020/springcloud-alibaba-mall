@@ -1,0 +1,14 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: mall-service-customer
+  data:
+    redis:
+      host: 192.168.196.128
+      port: 6379
+  redis:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1

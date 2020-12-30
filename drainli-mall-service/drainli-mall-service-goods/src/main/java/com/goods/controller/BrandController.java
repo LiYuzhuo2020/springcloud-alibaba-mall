@@ -1,7 +1,7 @@
 package com.goods.controller;
 
 import com.api.entity.Brand;
-import com.drainli.util.common.ResponseResult;
+import com.customer.util.common.ResponseResult;
 import com.goods.service.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

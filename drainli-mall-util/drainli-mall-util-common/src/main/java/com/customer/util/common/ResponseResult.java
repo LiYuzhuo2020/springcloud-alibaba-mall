@@ -1,4 +1,4 @@
-package com.drainli.util.common;
+package com.customer.util.common;
 
 import java.io.Serializable;
 

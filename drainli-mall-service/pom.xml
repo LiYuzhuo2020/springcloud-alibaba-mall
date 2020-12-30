@@ -2,15 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <parent>
         <artifactId>springcloud-alibaba-mall</artifactId>
         <groupId>com.drainli</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
+
     <modules>
         <module>drainli-mall-service-goods</module>
+        <module>drainli-mall-file-service</module>
+        <module>drainli-mall-service-customer</module>
     </modules>
 
     <artifactId>drainli-mall-service</artifactId>
@@ -31,6 +36,12 @@
             <groupId>com.drainli</groupId>
             <artifactId>drainli-mall-services-dependencys</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!--springboot web组件-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
     </dependencies>

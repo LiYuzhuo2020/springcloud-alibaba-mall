@@ -13,3 +13,7 @@
 #logging:
 #  pattern:
 #    console: "%msg%n"
+logging:
+  pattern:
+    console:
+      "%msg%n"

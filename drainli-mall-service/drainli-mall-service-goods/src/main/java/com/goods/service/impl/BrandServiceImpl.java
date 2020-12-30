@@ -4,7 +4,6 @@ import com.api.entity.Brand;
 import com.goods.mapper.BrandMapper;
 import com.goods.service.BrandService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
